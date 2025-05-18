@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+</head>
+<body>
+    <h1>CHATTING</h1>
+    <button onclick="createConnection()">Create ws Connection</button>
+</body>
+
+
+
+<!-- <script src="/socket.io/socket.io.js">
+function createConnection(){
+        const socker = io() ; 
+    }
+
+  // Doing this is incorrect : 
+  is incorrect because <script> tags with a src attribute should not contain inline JavaScript code.
+  The code inside the <script> tag is ignored when src is present.
+
+</script> -->
+
+<script src="/socket.io/socket.io.js"></script>
+
+
+<script>
+    function createConnection(){
+        const socker = io() ; 
+    }
+</script>
+
+</html>
